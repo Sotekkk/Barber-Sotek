@@ -15,8 +15,8 @@ server_scripts {
 ----barber
 
 client_scripts {
-  'barber/client/*.lua',
+  'client/*.lua',
   'pmenu.lua'
 }
 
-server_script 'barber/serveur/*.lua'
+server_script 'serveur/*.lua'
