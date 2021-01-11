@@ -53,9 +53,9 @@ barbershop = {
                 TriggerServerEvent('::{[bngfujqio}}:::pay')
                 FreezeEntityPosition(GetPlayerPed(-1), false)
                 ESX.ShowNotification("∑ Vous avez payé ~g~ 20$")
-                ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
-                    TriggerEvent('skinchanger:loadSkin', skin)
-				end)
+                TriggerEvent('skinchanger:getSkin', function(skin)
+                    TriggerServerEvent('esx_skin:save', skin)
+            end)
                 CloseMenu(true)
             end
         end,
