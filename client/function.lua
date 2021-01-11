@@ -18,7 +18,11 @@ function readyCutHair()
     DoScreenFadeIn(5000)
 end
 
-
+function destorycam() 	
+    RenderScriptCams(false, false, 0, 1, 0)
+    DestroyCam(cam, false)
+    TriggerServerEvent('barbershop:removeposition')
+end
 function DrawSub(msg, time)
 	ClearPrints()
 	BeginTextCommandPrint('STRING')
